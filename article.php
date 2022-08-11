@@ -8,7 +8,7 @@ if (!$id) {
     include 'pageNotFound.php';
 }
 
-$sql = "SELECT a.title, a.summary, a.content, a.category_id, a.member_id,
+$sql = "SELECT a.title, a.summary, a.content, a.category_id, a.member_id, a.created,
             c.name AS category,
             CONCAT(m.forename, ' ', m.surname) AS author,
             i.file AS image_file, 
